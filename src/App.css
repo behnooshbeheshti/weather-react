@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  background-color: rgb(78, 116, 197);
+  padding: 30px 30px 130px 30px;
+  margin: 15px 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: white;
+}
