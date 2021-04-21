@@ -1,4 +1,5 @@
 .WeatherSearch li {
-  text-align: left;
+  text-align: center;
   color: white;
+  list-style-type: none;
 }

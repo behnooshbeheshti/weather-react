@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 
 import "./WeatherSearch.css";
 
@@ -71,14 +72,24 @@ export default function WeatherSearch() {
     );
   } else {
     return (
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter a city.."
-          onChange={updateCity}
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            onChange={updateCity}
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <br />
+        <Loader
+          type="Puff"
+          color="#00BFFF"
+          height={100}
+          width={100}
+          timeout={3000} //3 secs
         />
-        <input type="submit" value="Search" />
-      </form>
+      </div>
     );
   }
 }
