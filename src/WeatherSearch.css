@@ -1,3 +1,7 @@
+.WeatherSearch ul {
+  padding: 0px;
+}
+
 .WeatherSearch li {
   text-align: center;
   color: white;
